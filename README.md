@@ -1,8 +1,8 @@
 # Skills
 
-Claude Code skills 仓库。每个子目录是一个独立的 skill，通过其 `SKILL.md` 被 Claude 自动触发。
+Skill 仓库。每个子目录是一个独立的 skill，通过其 `SKILL.md` 自动触发。
 
-Claude Code skills. Each subdirectory is a self-contained skill; Claude triggers it automatically via the `SKILL.md` frontmatter.
+Skill repository. Each subdirectory is a self-contained skill, auto-triggered via its `SKILL.md` frontmatter.
 
 ---
 
@@ -19,9 +19,7 @@ Claude Code skills. Each subdirectory is a self-contained skill; Claude triggers
 ### 安装方式
 
 ```bash
-npx skills add neodb
-npx skills add calibre
-npx skills add startup-mirror
+npx skills add github.com/CorrectRoadH/skills
 ```
 
 ### 依赖
@@ -45,9 +43,7 @@ npx skills add startup-mirror
 ### Install
 
 ```bash
-npx skills add neodb
-npx skills add calibre
-npx skills add startup-mirror
+npx skills add github.com/CorrectRoadH/skills
 ```
 
 ### Requirements
@@ -68,7 +64,7 @@ skills/
 └── startup-mirror/SKILL.md
 ```
 
-Each skill is pure documentation — no bundled scripts. The underlying tools (`curl`, `ebook-convert`, prompts) are already on the user's system; the skills teach Claude how to drive them, rather than re-wrap them.
+Each skill is pure documentation — no bundled scripts. The underlying tools (`curl`, `ebook-convert`, prompts) are already on the user's system; the skills teach the agent how to drive them, rather than re-wrap them.
 
 ## Credits
 
