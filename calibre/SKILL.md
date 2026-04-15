@@ -11,8 +11,10 @@ version: 1.1.0
 ## Prerequisite
 
 ```bash
-command -v ebook-convert || echo "Install Calibre, then: ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin/ebook-convert"
+command -v ebook-convert || echo "Install Calibre and make sure ebook-convert is on PATH"
 ```
+
+If `ebook-convert` isn't on PATH, resolve it per-platform (macOS app bundle, Linux package, Windows install dir) — don't hardcode a symlink path in the skill.
 
 ## Core command
 
@@ -38,15 +40,6 @@ for f in *.epub; do ebook-convert "$f" "${f%.*}.mobi" & done; wait
 ```
 
 Replace `*.epub` and `.mobi` with your source glob and target extension.
-
-## User's existing scripts
-
-The user already maintains these on their machine — prefer calling them over re-inventing:
-
-- `~/Script/tomobi.sh FILE …` — batch convert to `.mobi`
-- `~/Script/topdf.sh  FILE …` — batch convert to `.pdf`
-
-Both: filename strips at first `.`, so `my.book.epub` → `my.mobi`. If filenames contain multiple dots you care about, use the one-liner above instead (`${f%.*}` only strips the last extension).
 
 ## Kindle-tuned conversion
 

@@ -24,7 +24,7 @@ npx skills add CorrectRoadH/skills
 
 ### 依赖
 
-- `calibre` 需要本机安装 Calibre，并让 `ebook-convert` 在 PATH 中（macOS：`ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin/ebook-convert`）。
+- `calibre` 需要本机安装 Calibre。
 - `neodb` 直接用 `curl` 调公共 API，无需鉴权。
 - `startup-mirror` 无外部依赖，纯 prompt 方法论。
 
@@ -48,7 +48,7 @@ npx skills add CorrectRoadH/skills
 
 ### Requirements
 
-- `calibre` requires Calibre installed locally with `ebook-convert` on PATH (macOS: `ln -s /Applications/calibre.app/Contents/MacOS/ebook-convert /usr/local/bin/ebook-convert`).
+- `calibre` requires Calibre installed locally.
 - `neodb` uses public endpoints via plain `curl` — no auth, no extra deps.
 - `startup-mirror` has no external deps — pure prompt methodology.
 
@@ -68,6 +68,4 @@ Each skill is pure documentation — no bundled scripts. The underlying tools (`
 
 ## Credits
 
-- `neodb` methodology from `~/.openclaw/skills/neodb`.
-- `calibre` references the user's existing `~/Script/tomobi.sh` and `~/Script/topdf.sh`.
 - `startup-mirror` methodology from [Loot Drop](https://www.loot-drop.io).
