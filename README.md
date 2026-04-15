@@ -1,8 +1,8 @@
-# Skills · 我的自用 Claude Code 技能集
+# Skills
 
-个人使用的 Claude Code skills 仓库。每个子目录是一个独立的 skill，通过其 `SKILL.md` 被 Claude 自动触发。
+Claude Code skills 仓库。每个子目录是一个独立的 skill，通过其 `SKILL.md` 被 Claude 自动触发。
 
-Personal collection of Claude Code skills. Each subdirectory is a self-contained skill; Claude triggers it automatically via the `SKILL.md` frontmatter.
+Claude Code skills. Each subdirectory is a self-contained skill; Claude triggers it automatically via the `SKILL.md` frontmatter.
 
 ---
 
