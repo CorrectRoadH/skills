@@ -1,14 +1,10 @@
 # Skills
 
+> [English version → README.en.md](./README.en.md)
+
 Skill 仓库。每个子目录是一个独立的 skill，通过其 `SKILL.md` 自动触发。
 
-Skill repository. Each subdirectory is a self-contained skill, auto-triggered via its `SKILL.md` frontmatter.
-
----
-
-## 中文
-
-### 包含的 skills
+## 包含的 skills
 
 | 目录 | 作用 | 触发场景 |
 |------|------|----------|
@@ -16,56 +12,31 @@ Skill repository. Each subdirectory is a self-contained skill, auto-triggered vi
 | [`calibre/`](./calibre) | 封装 Calibre `ebook-convert`，一键转 mobi / pdf / epub | 电子书格式转换、Kindle 推送准备 |
 | [`startup-mirror/`](./startup-mirror) | 基于 Loot Drop 7 大失败反模式的创业点子挑战 | 新点子评审、创业前 pre-mortem、创业模式挑战 |
 
-### 安装方式
+## 安装方式
 
 ```bash
 npx skills add CorrectRoadH/skills
 ```
 
-### 依赖
+## 依赖
 
 - `calibre` 需要本机安装 Calibre。
 - `neodb` 直接用 `curl` 调公共 API，无需鉴权。
 - `startup-mirror` 无外部依赖，纯 prompt 方法论。
 
----
-
-## English
-
-### Included skills
-
-| Directory | Purpose | Triggers |
-|-----------|---------|----------|
-| [`neodb/`](./neodb) | NeoDB API integration — search books, films, music, games, TV, podcasts | Media metadata lookups, neodb.social integrations |
-| [`calibre/`](./calibre) | Wrapper around Calibre's `ebook-convert` — quick mobi / pdf / epub conversion | Ebook format conversion, Kindle prep |
-| [`startup-mirror/`](./startup-mirror) | Startup-idea stress test using Loot Drop's 7 failure antipatterns | New-venture pre-mortems, founder self-assessment, "challenge my idea" |
-
-### Install
-
-```bash
-npx skills add CorrectRoadH/skills
-```
-
-### Requirements
-
-- `calibre` requires Calibre installed locally.
-- `neodb` uses public endpoints via plain `curl` — no auth, no extra deps.
-- `startup-mirror` has no external deps — pure prompt methodology.
-
----
-
-## Layout
+## 目录结构
 
 ```
 skills/
-├── README.md                 # this file
+├── README.md                 # 本文件（中文）
+├── README.en.md              # English version
 ├── neodb/SKILL.md
 ├── calibre/SKILL.md
 └── startup-mirror/SKILL.md
 ```
 
-Each skill is pure documentation — no bundled scripts. The underlying tools (`curl`, `ebook-convert`, prompts) are already on the user's system; the skills teach the agent how to drive them, rather than re-wrap them.
+每个 skill 都是纯文档 —— 不打包脚本。底层工具（`curl`、`ebook-convert`、prompt）已经在用户机器上；skill 只教 agent 怎么用它们，而不是再包一层。
 
 ## Credits
 
-- `startup-mirror` methodology from [Loot Drop](https://www.loot-drop.io).
+- `startup-mirror` 方法论来自 [Loot Drop](https://www.loot-drop.io)。
