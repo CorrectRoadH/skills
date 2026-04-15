@@ -19,7 +19,7 @@ Skill repository. Each subdirectory is a self-contained skill, auto-triggered vi
 ### 安装方式
 
 ```bash
-npx skills add github.com/CorrectRoadH/skills
+npx skills add CorrectRoadH/skills
 ```
 
 ### 依赖
@@ -43,7 +43,7 @@ npx skills add github.com/CorrectRoadH/skills
 ### Install
 
 ```bash
-npx skills add github.com/CorrectRoadH/skills
+npx skills add CorrectRoadH/skills
 ```
 
 ### Requirements
